@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>order</title>
+    </head>
+    <body>
+        <form action="http://www.example.org/days.aspx" method="get" name="days">  
+ Please pick up a day (it's ok if you select more than one) to place your order. <br/><br/>
+ <select name="seven" multiple="multiple" >  
+ <option value="mon"> Monday </option >  <br/>
+ <option value="tue"> Tuesday </option >  <br/>
+ <option value="wed"> Wednesday </option > <br/> 
+ <option value="thu"> Thursday </option>  <br/>
+ <option value="fri"> Friday </option>  <br/>
+ <option value="sat"> Saturday </option> <br/> 
+ <option value="sun"> Sunday </option > <br/>
+ </select>
+
+ <br/><br/>
+ </form>
+
+ <form action="http://www.example.org/info.aspx" method="get" name="frmInfo">
+  Please select the cake you are interested in:<br/><br />
+  <select name="selinformation">
+    
+    <option disabled="disabled" value=""> – Classic Cakes –</option>
+    <option value="ChocolateCake">Chocolate Cake</option>
+    <option value="VanillaCake">Vanilla Cake</option>
+    <option value="RedVelvet">Red Velvet Cake</option>
+
+    <option disabled="disabled" value="">– Cream Cakes – </option>
+    <option value="Buttercream">Buttercream Cake</option>
+    <option value="WhippedCream">Whipped Cream Cake</option>
+    <option value="Tiramisu">Tiramisu</option>
+
+    <option disabled="disabled" value="">– Cupcakes & Mini –</option>
+    <option value="Cupcakes">Cupcakes</option>
+    <option value="CakePops">Cake Pops</option>
+    <option value="MiniCheesecakes">Mini Cheesecakes</option>
+
+    <option disabled="disabled" value="">– Fruity Cakes –</option>
+    <option value="StrawberryShortcake">Strawberry Shortcake</option>
+    <option value="MangoCake">Mango Cake</option>
+    <option value="FruitCake">Fruit Cake</option>
+
+  </select>
+  </form>
+  <br /><br />
+
+  <form action="http://www.example.com/imageupload.aspx" method="post" 
+ name="fromimageupload" enctype="multipart/form-data">  
+ <input type="file" name="fileupload" accept="image/*"/>  
+ </form>
+ <br/>
+
+ <div>
+  <form action="http://www.example.org/competition.aspx" method="post" name="frmcomp">
+  <fieldset>
+    <legend><em>Contact Information</em></legend><br/>
+    <label>First name: <input type="text" name="txtfname" size="20"/></label><br/><br/>
+    <label>Last name: <input type="text" name="txtlname" size="20"/></label><br/><br/>
+    <label>E-mail: <input type="text" name="txtemail" size="20"/></label>
+  </fieldset>
+</form>
+ </div>
+
+ 
+ <div>
+<form>
+ <table>
+ <tr>  
+ <td> Message </td >  
+ <td> <textarea name="txtbody" id="emailBody" cols="20"
+ rows="10"> </textarea> </td >  
+ </tr >
+ <br/>
+</table>
+  <input type="submit" value="Submit" />
+  </form>
+ </div>
+
+
+   
+
+ <div>
+  <form>
+    <h4>Question For Our Customers</h4>
+ <table border="1">
+    <tr>  
+ <td> How did you hear of us? </td>  
+ <td>  
+ <select name="selreferrer">  
+ <option value="google"> Google </option>  
+ <option value="ad"> Local Newspaper </option>  
+ <option value="friend"> Friend </option>  
+ <option value="other"> Other </option>  
+ </select>  
+ </td>  
+ </tr>
+
+ <tr>   
+ <td> Newsletter </td>  
+ <td> <input type="checkbox" name="chkbody" id="newslettersignup"
+ checked="checked" />  
+ Ensure this box is checked if you would like to 
+ receive email updates.</td>  
+ </tr> 
+ </table>
+ <br/>
+
+  <fieldset>
+    <legend><em>Cake Knowledge Question</em></legend>
+    What ingredient makes a cake rise and become fluffy?<br />
+    <label><input type="radio" name="radanswer" value="flour" /> Flour</label><br />
+    <label><input type="radio" name="radanswer" value="bakingpowder" /> Baking Powder</label><br />
+    <label><input type="radio" name="radanswer" value="sugar" /> Sugar</label><br />
+    <label><input type="radio" name="radanswer" value="butter" /> Butter</label><br />
+  </fieldset>
+<br/>
+  <fieldset>
+    <legend><em>Tiebreaker Question</em></legend>
+    <label>In 25 words or less, describe your dream cake or why you love cake:
+      <br />
+      <textarea name="txttiebreaker" rows="10" cols="40"></textarea>
+    </label>
+  </fieldset>
+    <input type="submit" value="Submit" />
+  </form>
+  </div>
+
+  <div>
+    <h1>Register your opinion</h1>
+     <p>How is our service(where 1 is very poor and 5 is very good)?</p>
+     <form action="submitvote" method="post">
+      <table>
+       <tr>
+        <td><input type="radio" name="1"></td>
+                 <td><input type="radio" name="2" ></td>
+       
+       <td><input type="radio" name="3"></td>
+       
+       <td><input type="radio" name="4"></td>
+       
+       <td><input type="radio" name="5"></td>
+       </tr>
+            <tr>
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+             <td>4</td>
+             <td>5</td>
+                </tr>
+            <tr>
+             <td>Very Poor</td>
+             <td>Poor</td>
+             <td>Average</td>
+             <td>Good</td>
+             <td>Very good </td>
+            </tr>
+      </table>
+      <input type="submit" value="Vote now">
+     </form>
+  </div>
+
+  </form>
+ </div>
+
+ <div>
+  <h3> Contact </h3>  
+ <p> <address> 28.Pagoda Road , Pathein / Ayeyarwaddy </address> </p>  
+ <p> <a href="http://maps.google.com/maps"> Find us on Google 
+ Maps </a>  </p>  
+ <p> <a href="mailto:info@cakeywakey.com"> Email Cakey Wakey </a> </p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122214.01468173107!2d96.07630282376402!3d16.817029089882574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ecac632808fd%3A0x139668e8b99df9f3!2sThe%20District%20Coffee%20Lounge!5e0!3m2!1sen!2smm!4v1750437834828!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
+ </iframe>
+ </div>
+
+
+  
+
+    </body>
+</html>
